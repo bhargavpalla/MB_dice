@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/back_col"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+
+        >
+
+        <ImageView
+            android:id="@+id/img_dice1"
+            android:layout_width="@dimen/standard"
+            android:layout_height="@dimen/standard"
+            android:padding="@dimen/pad"
+            android:src="@drawable/dice1">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/img_dice2"
+            android:layout_width="@dimen/standard"
+            android:layout_height="@dimen/standard"
+            android:padding="@dimen/pad"
+            android:src="@drawable/dice1"
+
+            >
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/roll"
+        android:layout_width="@dimen/btn_wd"
+        android:layout_height="@dimen/btn_ht"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/btn_mrg"
+        android:background="@color/white"
+        android:text="Roll">
+
+    </Button>
+
+</RelativeLayout>
